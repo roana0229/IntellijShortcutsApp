@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBDC37CD1E0486D1002E8D12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC37CC1E0486D1002E8D12 /* AppDelegate.swift */; };
+		FBDC37CF1E0486D1002E8D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDC37CE1E0486D1002E8D12 /* Assets.xcassets */; };
+		FBDC37D21E0486D1002E8D12 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDC37D01E0486D1002E8D12 /* MainMenu.xib */; };
+		FBDC37E01E0486E5002E8D12 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDC37DF1E0486E5002E8D12 /* Cocoa.framework */; };
+		FBDC37E51E0486E5002E8D12 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC37E41E0486E5002E8D12 /* SourceEditorExtension.swift */; };
+		FBDC37EB1E0486E5002E8D12 /* IntellijShortcuts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FBDC37DD1E0486E5002E8D12 /* IntellijShortcuts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBDC37F31E048721002E8D12 /* LineMoveNextCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC37F01E048721002E8D12 /* LineMoveNextCommand.swift */; };
+		FBDC37F41E048721002E8D12 /* LineMovePreviousCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC37F11E048721002E8D12 /* LineMovePreviousCommand.swift */; };
+		FBDC37F51E048721002E8D12 /* LocalVariableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC37F21E048721002E8D12 /* LocalVariableCommand.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBDC37E91E0486E5002E8D12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBDC37C11E0486D1002E8D12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBDC37DC1E0486E5002E8D12;
+			remoteInfo = IntellijShortcuts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBDC37EF1E0486E5002E8D12 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FBDC37EB1E0486E5002E8D12 /* IntellijShortcuts.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FBDC37C91E0486D1002E8D12 /* IntellijShortcutsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntellijShortcutsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDC37CC1E0486D1002E8D12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBDC37CE1E0486D1002E8D12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBDC37D11E0486D1002E8D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FBDC37D31E0486D1002E8D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDC37DD1E0486E5002E8D12 /* IntellijShortcuts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntellijShortcuts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDC37DF1E0486E5002E8D12 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FBDC37E31E0486E5002E8D12 /* IntellijShortcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IntellijShortcuts.entitlements; sourceTree = "<group>"; };
+		FBDC37E41E0486E5002E8D12 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		FBDC37E81E0486E5002E8D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDC37F01E048721002E8D12 /* LineMoveNextCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineMoveNextCommand.swift; sourceTree = "<group>"; };
+		FBDC37F11E048721002E8D12 /* LineMovePreviousCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineMovePreviousCommand.swift; sourceTree = "<group>"; };
+		FBDC37F21E048721002E8D12 /* LocalVariableCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalVariableCommand.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBDC37C61E0486D1002E8D12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDC37DA1E0486E5002E8D12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDC37E01E0486E5002E8D12 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBDC37C01E0486D1002E8D12 = {
+			isa = PBXGroup;
+			children = (
+				FBDC37CB1E0486D1002E8D12 /* IntellijShortcutsApp */,
+				FBDC37E11E0486E5002E8D12 /* IntellijShortcuts */,
+				FBDC37DE1E0486E5002E8D12 /* Frameworks */,
+				FBDC37CA1E0486D1002E8D12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBDC37CA1E0486D1002E8D12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC37C91E0486D1002E8D12 /* IntellijShortcutsApp.app */,
+				FBDC37DD1E0486E5002E8D12 /* IntellijShortcuts.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBDC37CB1E0486D1002E8D12 /* IntellijShortcutsApp */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC37CC1E0486D1002E8D12 /* AppDelegate.swift */,
+				FBDC37CE1E0486D1002E8D12 /* Assets.xcassets */,
+				FBDC37D01E0486D1002E8D12 /* MainMenu.xib */,
+				FBDC37D31E0486D1002E8D12 /* Info.plist */,
+			);
+			path = IntellijShortcutsApp;
+			sourceTree = "<group>";
+		};
+		FBDC37DE1E0486E5002E8D12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC37DF1E0486E5002E8D12 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBDC37E11E0486E5002E8D12 /* IntellijShortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC37F01E048721002E8D12 /* LineMoveNextCommand.swift */,
+				FBDC37F11E048721002E8D12 /* LineMovePreviousCommand.swift */,
+				FBDC37F21E048721002E8D12 /* LocalVariableCommand.swift */,
+				FBDC37E41E0486E5002E8D12 /* SourceEditorExtension.swift */,
+				FBDC37E81E0486E5002E8D12 /* Info.plist */,
+				FBDC37E21E0486E5002E8D12 /* Supporting Files */,
+			);
+			path = IntellijShortcuts;
+			sourceTree = "<group>";
+		};
+		FBDC37E21E0486E5002E8D12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC37E31E0486E5002E8D12 /* IntellijShortcuts.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBDC37C81E0486D1002E8D12 /* IntellijShortcutsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDC37D61E0486D1002E8D12 /* Build configuration list for PBXNativeTarget "IntellijShortcutsApp" */;
+			buildPhases = (
+				FBDC37C51E0486D1002E8D12 /* Sources */,
+				FBDC37C61E0486D1002E8D12 /* Frameworks */,
+				FBDC37C71E0486D1002E8D12 /* Resources */,
+				FBDC37EF1E0486E5002E8D12 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBDC37EA1E0486E5002E8D12 /* PBXTargetDependency */,
+			);
+			name = IntellijShortcutsApp;
+			productName = IntellijShortcutsApp;
+			productReference = FBDC37C91E0486D1002E8D12 /* IntellijShortcutsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBDC37DC1E0486E5002E8D12 /* IntellijShortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDC37EC1E0486E5002E8D12 /* Build configuration list for PBXNativeTarget "IntellijShortcuts" */;
+			buildPhases = (
+				FBDC37D91E0486E5002E8D12 /* Sources */,
+				FBDC37DA1E0486E5002E8D12 /* Frameworks */,
+				FBDC37DB1E0486E5002E8D12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntellijShortcuts;
+			productName = IntellijShortcuts;
+			productReference = FBDC37DD1E0486E5002E8D12 /* IntellijShortcuts.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBDC37C11E0486D1002E8D12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = roana0229;
+				TargetAttributes = {
+					FBDC37C81E0486D1002E8D12 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = U237WXEW5A;
+						ProvisioningStyle = Automatic;
+					};
+					FBDC37DC1E0486E5002E8D12 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = U237WXEW5A;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FBDC37C41E0486D1002E8D12 /* Build configuration list for PBXProject "IntellijShortcutsApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBDC37C01E0486D1002E8D12;
+			productRefGroup = FBDC37CA1E0486D1002E8D12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBDC37C81E0486D1002E8D12 /* IntellijShortcutsApp */,
+				FBDC37DC1E0486E5002E8D12 /* IntellijShortcuts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBDC37C71E0486D1002E8D12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDC37CF1E0486D1002E8D12 /* Assets.xcassets in Resources */,
+				FBDC37D21E0486D1002E8D12 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDC37DB1E0486E5002E8D12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBDC37C51E0486D1002E8D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDC37CD1E0486D1002E8D12 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDC37D91E0486E5002E8D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDC37E51E0486E5002E8D12 /* SourceEditorExtension.swift in Sources */,
+				FBDC37F51E048721002E8D12 /* LocalVariableCommand.swift in Sources */,
+				FBDC37F31E048721002E8D12 /* LineMoveNextCommand.swift in Sources */,
+				FBDC37F41E048721002E8D12 /* LineMovePreviousCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBDC37EA1E0486E5002E8D12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBDC37DC1E0486E5002E8D12 /* IntellijShortcuts */;
+			targetProxy = FBDC37E91E0486E5002E8D12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBDC37D01E0486D1002E8D12 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBDC37D11E0486D1002E8D12 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBDC37D41E0486D1002E8D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBDC37D51E0486D1002E8D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		FBDC37D71E0486D1002E8D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U237WXEW5A;
+				INFOPLIST_FILE = IntellijShortcutsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.roana0229.IntellijShortcutsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FBDC37D81E0486D1002E8D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U237WXEW5A;
+				INFOPLIST_FILE = IntellijShortcutsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.roana0229.IntellijShortcutsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FBDC37ED1E0486E5002E8D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IntellijShortcuts/IntellijShortcuts.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U237WXEW5A;
+				INFOPLIST_FILE = IntellijShortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = org.roana0229.IntellijShortcutsApp.IntellijShortcuts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FBDC37EE1E0486E5002E8D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IntellijShortcuts/IntellijShortcuts.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U237WXEW5A;
+				INFOPLIST_FILE = IntellijShortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = org.roana0229.IntellijShortcutsApp.IntellijShortcuts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBDC37C41E0486D1002E8D12 /* Build configuration list for PBXProject "IntellijShortcutsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDC37D41E0486D1002E8D12 /* Debug */,
+				FBDC37D51E0486D1002E8D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDC37D61E0486D1002E8D12 /* Build configuration list for PBXNativeTarget "IntellijShortcutsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDC37D71E0486D1002E8D12 /* Debug */,
+				FBDC37D81E0486D1002E8D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBDC37EC1E0486E5002E8D12 /* Build configuration list for PBXNativeTarget "IntellijShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDC37ED1E0486E5002E8D12 /* Debug */,
+				FBDC37EE1E0486E5002E8D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBDC37C11E0486D1002E8D12 /* Project object */;
+}
